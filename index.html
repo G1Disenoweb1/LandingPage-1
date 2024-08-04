@@ -9,6 +9,8 @@
 <link href="css/bootstrap-custom.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+<meta name="Keywords" content="Aurora, new album, landing page, about, music, warrios & weirdos, what happened to the heart">
+<meta name="Description" content="Landing page / pagina de destino en donde se encuentra una breve reseña de la cantante Aurora, los destinos de sus giras, cta para conseguir tickets para sus conciertos, formulario de campaña y contacto.">
 </head>
 	
 <body>
@@ -23,25 +25,25 @@
 				</a>
 			
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<i class="fa-solid fa-bars"></i>
 				</button>
 				
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Home</a>
+							<a class="nav-link" href="#hero">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Overview</a>
+							<a class="nav-link" href="#overview">Overview</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Tickets</a>
+							<a class="nav-link" href="#tickets">Tickets</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Subscribe</a>
+							<a class="nav-link" href="#subscribe">Subscribe</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="#contact">Contact</a>
 						</li>
 					</ul>
 
@@ -57,7 +59,7 @@
 	
 	<section id="overview">
 	  <div class="row">
-		  <article class="col-lg-6 col-sm-6 col-12">
+		  <article class="col-lg-6 col-sm-12 col-12">
 		    <p>Aurora Aksnes, known as AURORA, is a Norwegian singer, songwriter, and producer who has captivated global audiences with her ethereal voice. AURORA gained attention with her debut EP “Running With The Wolves” in 2015 and her first album “All My Demons Greeting Me as a Friend” in 2016. Her music is characterized by emotional depth and lyrical complexity, exploring themes of nature, love, and the human experience.
 				
 			<br>
@@ -67,27 +69,31 @@
 			and inspiration.</p>
 		  </article>
 		  
-		  <article class="col-lg-6 col-sm-6 col-12">
+		  <article class="col-lg-6 col-sm-12 col-12">
 			  <img src="img/overview-img.png" alt="overview-new-album-img" class="img-fluid">
 		  </article>
 	  </div>
 	</section>
 	
 	<section id="tickets">
-		<div class="container">
+		<div class="container-fluid">
 	  <div class="row">
 		  <article class="col-lg-6 col-sm-6 col-12">
-		    <p>Aug 17, 2024    Tokyo, Japan</p>
-			<p>Aug 18, 2024    Osaka, Japan</p>
-			<p>Aug 23, 2024    Jakarta, Indonesia</p>
-			<p>Aug 25, 2024    Bangkok, Thailand</p>
+			  <div class="dates">
+				<p class="p1">Aug 17, 2024    Tokyo, Japan</p>
+				<p class="p2">Aug 18, 2024    Osaka, Japan</p>
+				<p class="p3">Aug 23, 2024    Jakarta, Indonesia</p>
+				<p class="p4">Aug 25, 2024    Bangkok, Thailand</p>
+			  </div>
 		  </article>
 		  
 		  <article class="col-lg-6 col-sm-6 col-12">
-		    <p>Sep 18, 2024      Milan, Milan</p>
-			<p>Sep 20, 2024     Vienna, Vienna</p>
-			<p>Sep 21, 2024    Prague, Czechia</p>
-			<p>Sep 23, 2024    Krakow, Lesser Poland</p>
+			  <div class="dates">
+				<p class="p5">Sep 18, 2024      Milan, Milan</p>
+				<p class="p6">Sep 20, 2024     Vienna, Vienna</p>
+				<p class="p7">Sep 21, 2024    Prague, Czechia</p>
+				<p class="p8">Sep 23, 2024    Krakow, Lesser Poland</p>
+			  </div>
 		  </article>
 	  </div>
 		<img src="img/tickets-img-2.png" alt="tickets-img-2" class="img-fluid">
@@ -142,15 +148,25 @@
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scrolling-nav.js"></script>
+	<script src="js/jquery.nav.js"></script>
 
 
 	<script>
-	
-		$(function() {
-			
-			
-		});
-	
+		$('navbar').onePageNav({
+				currentClass: 'active',
+				scrollSpeed: 1000,
+				easing: 'swing'
+			});
+		
+		
+		$(window).on('scroll', function () {
+				if ($(window).scrollTop() > 48) {
+					$('header').addClass('sticky');
+				} else {
+					$('header').removeClass('sticky');
+				}
+			});
 	</script>
 </body>
 </html>
