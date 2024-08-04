@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+:root{
+	--bg-header:#29bffe;
+	--menu-hover:#fff;
+	--color-azul:#29bffe;
+}
+body{
+	font-family: "Inter", sans-serif;
+	font-size: 16px;
+	color: #000;
+}
+
+header{
+	background-color: #040F1D;
+	padding: 10px 0;
+}
+
+#hero {
+	background-color: #040F1D;
+}
+
+#hero img {
+	width: 100%;
+}
+
+#overview {
+	padding: 70px;
+	background-color: #040F1D;
+}
+
+#overview p {
+	padding-right: 60px;
+	font-size: 28px;
+	color: #FFFFFF
+}
+
+#tickets {
+	background-image: url("../img/tickets-img-1.png");
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: "Cinzel", serif;
+	color: #FFFFFF;
+	padding-top: 200px;
+	padding-bottom: 20px;
+}
+
+#tickets p {
+	
+	
+}
+
+#tickets .btn-dark {
+	background-color: #D7CCB6;
+	font-family: "Cinzel", serif;
+	font-weight: 700;
+	color: #1B395B;
+	border-radius: 18px;
+	margin-top: 15px; 
+}
+
+#tickets .btn-dark:hover {
+	background-color: #1B395B;
+	font-family: "Cinzel", serif;
+	font-weight: 700;
+	color: #D7CCB6;
+	border-radius: 18px;
+	margin-top: 15px; 
+}
+
+#tickets img {
+	margin-top: 590px;
+}
+
+#subscribe {
+	background-image: url("../img/subscription-img.png");
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 15%;
+}
+
+#subscribe h2 {
+	color: #FFFFFF;
+	font-weight: 300;
+}
+
+#contact {
+	background-color: #040F1D;
+	padding-top: 70px;
+}
+
+#contact .rectangle {
+	background-color: #1B395B;
+	color: #CFCFCF;
+	font-family: "Cinzel", serif;
+	font-weight: 700;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 17px;
+}
+
+#contact i {
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+
+footer {
+	background-color: #040F1D;
+	padding-top: 70px;
+	text-align: center;
+}
+
+footer img {
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1173px){
+}
